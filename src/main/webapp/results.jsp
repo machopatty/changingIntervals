@@ -13,9 +13,9 @@
     <h2>Search Results: </h2>
     <table id="userTable">
         <thead>
-            <th>Name</th>
-            <th>User Name</th>
-            <th>Age</th>
+            <th> Name </th>
+            <th> User Name </th>
+            <th> Age </th>
         </thead>
         <tbody>
         <c:forEach var="user" items="${users}">

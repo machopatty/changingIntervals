@@ -60,7 +60,19 @@
           <version>5.0.0</version>
           <scope>test</scope>
       </dependency>
-      <!-- To run tests on IDE such as Eclipse, Intellij -->
+    <!-- Hibernate -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.2.12.Final</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-c3p0</artifactId>
+      <version>5.2.12.Final</version>
+    </dependency>
+    <!-- To run tests on IDE such as Eclipse, Intellij -->
       <dependency>
           <groupId>junit</groupId>
           <artifactId>junit</artifactId>

@@ -14,7 +14,9 @@
 9/19:   1.5hr videos & activity
 9/23:   1.5hr exercise
 9/24:   1hr exercise
-  -week 3 complete-
+9/25:   .75hr Ind project- timeLog
+9/26:   2hr Ind project- problem statement, projectPlan, ScreenDesign, and appFlow
+-week 3 complete-
 
-9/25:   .75hr Ind project
-9/26:   2hr Ind project
+9/26:   1.5hr videos & activity
+10/3:   4hr videos & activity 

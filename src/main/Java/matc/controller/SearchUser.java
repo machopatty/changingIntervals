@@ -1,6 +1,6 @@
 package matc.controller;
 
-import matc.persistence.UserData;
+import matc.persistence.UserDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,7 +12,7 @@ import java.io.IOException;
 
 /**
  * A simple servlet to welcome the user.
- * @author pwaite
+ * @author lclemens
  */
 
 @WebServlet(
@@ -23,11 +23,11 @@ public class SearchUser extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        UserData userData = new UserData();
+        UserDao userDao = new UserDao();
         if (req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", userData.getUsersByLastName(req.getParameter("searchTerm")));
+            req.setAttribute("users", userDao.getUsersByLastName(req.getParameter("searchTerm")));
         } else {
-            req.setAttribute("users", userData.getAllUsers());
+            req.setAttribute("users", userDao.getAllUsers());
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");

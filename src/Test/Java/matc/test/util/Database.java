@@ -1,11 +1,17 @@
-package matc.persistence;
+package matc.test.util;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
-
 /**
  * Provides access the database
  * Created on 8/31/16.
@@ -15,6 +21,7 @@ import java.util.Properties;
 
 public class Database {
 
+    private final Logger logger = LogManager.getLogger(this.getClass());
     // create an object of the class Database
     private static Database instance = new Database();
 
@@ -77,4 +84,38 @@ public class Database {
         connection = null;
     }
 
+    /**
+     * Run the sql.
+     *
+     * @param sqlFile the sql file to be read and executed line by line
+     */
+    public void runSQL(String sqlFile) {
+
+        Statement stmt = null;
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        InputStream inputStream = classloader.getResourceAsStream(sqlFile);
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
+
+            Class.forName("com.mysql.jdbc.Driver");
+            connect();
+            stmt = connection.createStatement();
+
+            while (true) {
+                String sql = br.readLine();
+                if (sql == null) {
+                    break;
+                }
+                stmt.executeUpdate(sql);
+
+            }
+
+        } catch (SQLException se) {
+            logger.error(se);
+        } catch (Exception e) {
+            logger.error(e);
+        } finally {
+            disconnect();
+        }
+
+    }
 }

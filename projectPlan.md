@@ -10,7 +10,7 @@ X Complete Problem Statement
  AWS, and DAO?
 X Write project plan
 X Document application flow in text and pictures
- Triple-check for Checkpoint 1: Problem statement, project plan, screen design
+X Triple-check for Checkpoint 1: Problem statement, project plan, screen design
  and time log pushed to GitHub.
 
 Week 4
@@ -56,7 +56,7 @@ Week 8
  from the database is implemented.
 
 Week 9
- Integration with social media
+ Integration with social media- facebook
  Create interval adjuster page jsp
  create DAO & unit test for interval adjuster page.
  Review and incorporate feedback from Checkpoint 3.
