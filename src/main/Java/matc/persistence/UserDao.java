@@ -1,7 +1,6 @@
 package matc.persistence;
 
 import matc.entity.User;
-import matc.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -47,7 +46,7 @@ public class UserDao {
      */
     public List<User> getUsersByLastName(String lastName) {
         logger.debug("searching for: {}" + lastName);
-        
+
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = sessionFactory.getCriteriaBuilder();
         CriteriaQuery<User> query = builder.createQuery(User.class);
@@ -75,7 +74,9 @@ public class UserDao {
      */
     public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
+        session.beginTransaction();
         session.saveOrUpdate(user);
+        session.getTransaction().commit();
         session.close();
     }
 
