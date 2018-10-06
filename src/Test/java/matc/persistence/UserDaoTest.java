@@ -27,6 +27,12 @@ class UserDaoTest {
         dao = new UserDao();
     }
 
+    @Test
+    void getUserByLastName() {
+        List<User> users = dao.getUsersByLastName("Curry");
+        assertEquals(1, users.size());
+    }
+
     /**
      * Verify successful retrieval of a user
      */
@@ -80,7 +86,7 @@ class UserDaoTest {
      */
     @Test
     void getAllSuccess() {
-        List<User> users = dao.getAll();
+        List<User> users = dao.getAllUsers();
         assertEquals(6, users.size());
     }
 
@@ -101,5 +107,11 @@ class UserDaoTest {
     void getByPropertyLikeSuccess() {
         List<User> users = dao.getByPropertyLike("lastName", "c");
         assertEquals(3, users.size());
+    }
+
+    @Test
+    void getByPropertyEqual() {
+        List<User> users = dao.getByPropertyEqual("firstName", "Dawn");
+        assertEquals(1, users.size());
     }
 }
