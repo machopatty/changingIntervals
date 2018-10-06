@@ -19,4 +19,7 @@
 -week 3 complete-
 
 9/26:   1.5hr videos & activity
-10/3:   4hr videos & activity 
+10/3:   4hr videos & activity
+-week 4 complete-
+
+10/5:   2hrs videos & activity
