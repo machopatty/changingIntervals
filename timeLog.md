@@ -22,4 +22,5 @@
 10/3:   4hr videos & activity
 -week 4 complete-
 
-10/5:   2hrs videos & activity
+10/5:   1.5hrs videos & activity
+10/9:   3hr videos & activity

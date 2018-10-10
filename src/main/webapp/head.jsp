@@ -1,18 +1,27 @@
 <!DOCTYPE html>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<html lang="zxx">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flick Subscribe Form Flat Responsive widget Template :: w3layouts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>${title}</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Flick Widget Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i" rel="stylesheet">
+    <!-- /fonts -->
+    <!-- css -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
+    <!-- /css -->
 </head>
